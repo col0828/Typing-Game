@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css?after">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <title>Typing Game</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="dash">
+            <button onclick="startGame()" class="start_btn">Start</button>
+            <select id="sel"></select>
+            <input id="keyword" type="text" placeholder="단어입력" />
+            <div id="hpBox"></div>
+            <div id="scoreBox">0</div>
+            <button type="button" onClick="showModal()" class="dic_btn"><img src="dictionary.png"
+                    class="dic_pic"></button>
+        </div>
+        <div id="stage"></div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="close _btn_upper">
+            <button onclick="closeModal()" class="close_btn">X</button>
+        </div>
+        <div>
+            <h1>1. bake : 굽다</h1>
+            <h2> ex) I’m baking a birthday cake for Alex.</h2>
+            <h1>2. barley : 보리</h1>
+            <h2> ex) The cattle are fed barley.</h2>
+            <h1>3. brush : 털다</h1>
+            <h2> ex) He brushed the dirt off his jacket..</h2>
+            <h1>4. cook : 요리하다</h1>
+            <h2> ex) He cooked lunch for me. </h2>
+            <h1>5. dance : 춤을 추다</h1>
+            <h2> ex) He asked me to dance.</h2>
+            <h1>6. discover : 발견하다</h1>
+            <h2> ex) Cook is credited with discovering Hawaii.</h2>
+            <h1>7. draw : 그리다</h1>
+            <h2> ex) You draw beautifully.</h2>
+            <h1>8. drive : 운전하다</h1>
+            <h2> ex) Don’t drive so fast!</h2>
+            <h1>9. eat : 먹다</h1>
+            <h2> ex) I was too nervous to eat.</h2>
+            <h1>10. explore : 탐험하다</h1>
+            <h2> ex) The city is best explored on foot.</h2>
+            <h1>11. gust : 세찬 바람</h1>
+            <h2> ex) The wind was blowing in gusts. </h2>
+            <h1>12. jump : 뛰다</h1>
+            <h2> ex) She jumped down from the chair. </h2>
+            <h1>13. kick : 차다</h1>
+            <h2> ex) She was punched and kicked by her attackers</h2>
+            <h1>14. learn : 배우다</h1>
+            <h2> ex)I learned a lot from my father.</h2>
+            <h1>15. line : 선</h1>
+            <h2> ex) parallel lines</h2>
+            <h1>16. listen : 듣다</h1>
+            <h2> ex) I listened carefully to her story.</h2>
+            <h1>17. monitor : 관찰하다</h1>
+            <h2> ex) Each student’s progress is closely monitored.</h2>
+            <h1>18. mouse : 쥐</h1>
+            <h2> ex) The stores were overrun with rats and mice.</h2>
+            <h1>19. note : 메모</h1>
+            <h2> ex) Please make a note of the dates. </h2>
+            <h1>20. orange : 오렌지</h1>
+            <h2> ex) an orange tree</h2>
+            <h1>21. paint : 그리다</h1>
+            <h2> ex) She paints in oils.</h2>
+            <h1>22. pen : 쓰다</h1>
+            <h2> ex) He penned a letter to the local paper.</h2>
+            <h1>23. plant : 심다</h1>
+            <h2> ex) Plant these shrubs in full sun.</h2>
+            <h1>24. play : 놀다</h1>
+            <h2> ex) You'll have to play inside today.</h2>
+            <h1>25. potato : 감자</h1>
+            <h2> ex) Will you peel the potatoes for me?</h2>
+            <h1>26. rain : 비가 오다</h1>
+            <h2> ex) It started to rain.</h2>
+            <h1>27. read : 읽다</h1>
+            <h2> ex) She's still learning to read.</h2>
+            <h1>28. remember : 기억하다</h1>
+            <h2> ex) I don't remember my first day at school.</h2>
+            <h1>29. run : 달리다</h1>
+            <h2> ex) Can you run as fast as Mike?</h2>
+            <h1>30. shower : 샤워를 하다</h1>
+            <h2> ex) She showered and dressed and went downstairs.</h2>
+            <h1>31. sing : 노래하다</h1>
+            <h2> ex) She usually sings in the shower.</h2>
+            <h1>32. snow : 눈</h1>
+            <h2> ex) She was falling heavily.</h2>
+            <h1>33. soccer : 축구</h1>
+            <h2> ex) soccer players</h2>
+            <h1>34. sun : 태양</h1>
+            <h2> ex) The sun was just setting</h2>
+            <h1>35. swim : 수영하다</h1>
+            <h2> ex) The boys swam across the lake.</h2>
+            <h1>36. teach : 가르치다</h1>
+            <h2> ex) He teaches them English.</h2>
+            <h1>37. travel : 여행하다</h1>
+            <h2> ex) We always travel first class.</h2>
+            <h1>38. type : 유형</h1>
+            <h2> ex) She mixes with all types of people.</h2>
+            <h1>39. visit : 방문하다</h1>
+            <h2> ex) She went to visit relatives in Wales.</h2>
+            <h1>40. walk : 걷다</h1>
+            <h2> ex) The baby is just learning to walk.</h2>
+            <h1>41. watch : 보다</h1>
+            <h2> ex) He watched the house for sings of activity.</h2>
+            <h1>42. write : 쓰다</h1>
+            <h2> ex) Please write in pen on both sides of the paper.</h2>
+        </div>
+    </div>
+
+    <script src="lib.js?after"></script>
+    <script>
+        function showModal() {
+            document.getElementById('myModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+* {
+    font-family: "Black Han Sans";
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #5eed26cb;
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    padding-bottom: 1.5%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.title_under {
+    display: block;
+    color: #ffffff;
+    font-size: 15vh;
+}
+
+.btn {
+    padding-top: 3vh;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.game_btn {
+    height: 100%;
+    width: 20vh;
+    border-radius: 38px;
+    background: #ffff;
+    color: #5eed26cb;
+    margin: 0.5vh;
+    font-size: 180%;
+    outline: none;
+    appearance: none;
+    border: none;
+    padding-top: 5%;
+}
+
+.game_btn:hover {
+    margin-top: -2px;
+    margin-left: 0px;
+    transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.25);
+}
+
+.explain_btn {
+    height: 100%;
+    width: 5vh;
+    background: none;
+    color: #ffff;
+    margin-left: 5vh;
+    font-size: 300%;
+    outline: none;
+    appearance: none;
+    border: none;
+    padding-top: 5%;
+}
+
+.explain_btn:hover {
+    margin-top: -2px;
+    margin-left: 5vh;
+    transform: scale(12, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 40%;
+    padding: 5%;
+    background-color: white;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+    align-items: center;
+}
+
+.close_btn {
+    width: 5vh;
+    background: none;
+    color: #5eed26cb;
+    font-size: 300%;
+    outline: none;
+    appearance: none;
+    border: none;
+    margin-top: -0.5%;
+}
+
+.close_btn:hover {
+    margin-top: -2px;
+    transform: scale(12, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+}

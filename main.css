@@ -1,0 +1,179 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #5eed26cb;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    width: 1200px;
+    height: 695px;
+    margin: auto;
+    padding-right: 100px;
+    overflow: hidden;
+}
+
+.dash {
+    width: 200px;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.start_btn {
+    font-family: "Black Han Sans";
+    width: 90%;
+    height: 50px;
+    font-size: 24px;
+    outline: none;
+    appearance: none;
+    border: none;
+    border-radius: 25px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.start_btn:hover {
+    background-color: #ebede9;
+}
+
+#sel {
+    padding-left: 10px;
+    font-size: 25px;
+    font-family: "Black Han Sans";
+    border-radius: 10px;
+    width: 90%;
+    height: 50px;
+    margin-bottom: 4px;
+    font-size: 24px;
+    border: none;
+}
+
+option {
+    background-color: #ffffff;
+}
+
+option:checked {
+    background-color: #d6d8d3;
+}
+
+input {
+    font-family: 'Black Han Sans';
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+    width: 85%;
+    height: 45px;
+    margin-bottom: 4px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+#hpBox {
+    width: 100%;
+    height: 67px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+#scoreBox {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#stage {
+    width: 1000px;
+    height: 100%;
+    background: rgb(147, 201, 255);
+    float: left;
+    position: relative;
+    /*자식 때문에*/
+}
+
+#stage span {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.dic_btn {
+    margin-top: 10px;
+    height: 100px;
+    width: 90%;
+    align-items: center;
+    background: none;
+    border: none;
+}
+
+.dic_btn:hover {
+    margin-top: -2px;
+    margin-left: 0px;
+    transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+}
+
+.dic_pic {
+    height: 90px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 500px;
+    padding: 5%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+h1 {
+    font-family: 'Black Han Sans';
+}
+
+h2 {
+    margin-top: -20px;
+    padding-left: 40px;
+}
+
+.close_btn_upper {
+    padding-left: 500px;
+}
+
+.close_btn {
+    margin-left: 750px;
+    background: none;
+    border: none;
+    font-family: "Black Han Sans";
+    font-size: 25px;
+}

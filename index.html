@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css?after">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <title>Typing Game</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1 class="title_under">Typing Game</h1>
+        <div class="btn">
+            <button onClick="location.href='main.html'" class="game_btn">
+                Go!
+            </button>
+            <button onClick="showModal()" class="explain_btn">
+                ?
+            </button>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <p>This is a typing practice game.</p>
+        <p>You can remove the letters that come down by typing the same.</p>
+        <p>If the letter touches the floor, your life will be deducted, and if you touch it 3 times, the game will end.
+        </p>
+        <p>If you press the dictionary-shaped button at the top right of the game screen, it contains the meaning of the
+            English word and its examples.</p>
+        <p>Increase your English skills through typing games!</p>
+        <button onclick="closeModal()" class="close_btn">X</button>
+    </div>
+
+
+    <script>
+        function showModal() {
+            document.getElementById('myModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
